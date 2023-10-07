@@ -1,0 +1,13 @@
+1 create empty folder name MEARAPP
+2 create package.json by using command          npm init -y
+3 install express by using command              npm i express
+4 created pages by express
+installed nodemon by                          npm i nodemon -g   
+restart your pc
+put all folders in server
+apply middleware
+create atlas mongodb cluster
+inside cluster create db
+install mongodb
+install mongoose locally in your project          npm i mongoose
+for security, installing dotenv
