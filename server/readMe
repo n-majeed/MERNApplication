@@ -2,12 +2,23 @@
 2 create package.json by using command          npm init -y
 3 install express by using command              npm i express
 4 created pages by express
-installed nodemon by                          npm i nodemon -g   
-restart your pc
-put all folders in server
-apply middleware
-create atlas mongodb cluster
-inside cluster create db
-install mongodb
-install mongoose locally in your project          npm i mongoose
-for security, installing dotenv
+5 installed nodemon by                          npm i nodemon -g   
+6 restart your pc
+7 put all folders in server
+8 apply middleware
+9 create atlas mongodb cluster
+10 inside cluster create db
+11 install mongodb
+12 install mongoose locally in your project          npm i mongoose
+13 for security, installing dotenv                    npm i dotenv
+14 making config.js file and keep that file in gitignore so that this file will not go live
+15 keep db string and port in config.js file
+16 accquire that file in app.js
+17 Create model in which create schema
+18 export that schema
+19 acquire that schema in app.js file
+20 Due to path messup after mongodb installation nodemon not working globally so add nodemon 
+locally in our project                        "scripts": {
+                                                "serve": "nodemon server.js",
+21 To run nodemon locally                      npm run serve
+                                                

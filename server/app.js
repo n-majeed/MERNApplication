@@ -3,19 +3,13 @@ const express=require('express');
 const app = express()
 const mongoose=require('mongoose')
 
-dotenv.config({path:'./config.env'})
-const DB=process.env.DATABASE
+dotenv.config({path:'./config.env'});
+require('./Db/conn.js')
+const User=require('./Models/userSchema')
+app.use(require('./Route/route'))
 
-mongoose.connect(DB/*,{
-   useNewUrlParser:true,
-   useCreateIndex:true,
-   useUnifiedTopology:true,
-   useFindAndModify:false
-}*/).then(()=>{
-console.log("connection successfull")
-}).catch((err)=>{
-   console.log("not connected")
-});
+const PORT=process.env.PORT
+
 
 const middleware=(req,res,next)=>{
 console.log("i AM Middleware")
@@ -45,6 +39,6 @@ next();
     
     res.send("hi from server, this is signup page")
  })
- app.listen(5172,()=>{
-
+ app.listen(PORT,()=>{
+console.log(`Application is running on port ${PORT}`)
  })
